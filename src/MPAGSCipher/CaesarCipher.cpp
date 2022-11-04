@@ -17,7 +17,7 @@ CaesarCipher::CaesarCipher(const std::string key) : key_{0} {
     key_ = std::stoul(key);
 }
 
-std::string CaesarCipher::applyCipher(const bool encrypt, const std::string inputText) {
+std::string CaesarCipher::applyCipher(const bool encrypt, const std::string& inputText) {
     // Create the output string
     std::string outputText;
 
